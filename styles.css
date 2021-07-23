@@ -77,10 +77,10 @@ nav a:hover{
 }
 
 #gps{
-    border: 18px solid grey;
+    border: 20px solid #F2F2F2;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 20%;
-    background-color: grey;
+    background-color: #F2F2F2;
     color: black;
 }
 
@@ -89,6 +89,7 @@ input[type=text]{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
+    border: 2px solid #F2F2F2;
 }
 
 input[type=submit]{
@@ -96,7 +97,7 @@ input[type=submit]{
     color: white;
     background: #0065FC;
     height: 100%;
-    border: 10px solid #0065FC;
+    border: 15px solid #0065FC;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: -2%;
@@ -104,3 +105,34 @@ input[type=submit]{
     font-weight: 550;
     font-size: 17px;
 }
+
+#filtres{
+    display: flex;
+    padding-top: 1%;
+    font-family: 'Raleway', sans-serif;
+}
+
+#filtres h1{
+    font-size: 17px;
+}
+
+#filtres i{
+    margin-left: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #DEEBFF;
+    color:  #0065FC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#filtres button{
+    padding: 15px 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    background: white;
+    border: 2px solid grey;
+    border-radius: 20px;
