@@ -1,6 +1,7 @@
 body{
     width: 95%;
     margin: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
 #tete{
@@ -17,16 +18,15 @@ header{
 #imglogo{
     width: 20%;
 }
+
 header h1{
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
     margin-top: 7%;
 }
 
 header p{
     font-size: 13px;
-    font-family: 'Raleway', sans-serif;
     margin-top: -1%;
 }
 
@@ -40,7 +40,6 @@ nav ul{
 nav li{
     display: inline-block;
     margin-left: 65px;
-    font-family: 'Raleway', sans-serif;
     font-size: 15px;
     position: relative;
 }
@@ -85,31 +84,31 @@ nav a:hover{
 }
 
 input[type=text]{
-    height: 87%;
+    height: 92%;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
     border: 2px solid #F2F2F2;
+    outline: none;
 }
 
 input[type=submit]{
     display: inline-block;
     color: white;
     background: #0065FC;
-    height: 100%;
-    border: 15px solid #0065FC;
+    padding: 0px 25px;
+    border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     margin-left: -2%;
     font-family: 'Raleway', sans-serif;
     font-weight: 550;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 #filtres{
     display: flex;
     padding-top: 1%;
-    font-family: 'Raleway', sans-serif;
 }
 
 #filtres h1{
@@ -126,13 +125,47 @@ input[type=submit]{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-right: -2%;
 }
 
 #filtres button{
-    padding: 15px 20px;
+    padding: 6px 20px 6px 45px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     font-size: 16px;
     background: white;
-    border: 2px solid grey;
-    border-radius: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+}
+
+#info{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#info p{
+    margin-left: 10px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#hebergement{
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergement article{
+    width: 60%;
+    background-color: #F2F2F2;
+}
+
+#hebergement aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 30%;
+    background-color: #F2F2F2;
+}
