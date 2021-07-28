@@ -116,9 +116,9 @@ input[type=submit]{
 }
 
 #filtres i{
-    margin-left: 50px;
-    width: 50px;
-    height: 50px;
+    margin-left: 45px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background: #DEEBFF;
     color:  #0065FC;
@@ -126,7 +126,7 @@ input[type=submit]{
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-right: -2%;
+    margin-right: -2.3%;
 }
 
 #filtres button{
@@ -139,11 +139,23 @@ input[type=submit]{
     border-radius: 50px;
 }
 
+#filtres button:hover{
+    color:#0065FC;
+    padding-top: 2px;
+}
 #info{
     display: flex;
     align-items: center;
     margin-top: 1%;
     margin-bottom: 1%;
+}
+
+#icoinfo{
+    color: #0065FC;
+    padding: 10px 15px;
+    border: 1px solid #F2F2F2;
+    background: White;
+    border-radius: 50px;
 }
 
 #info p{
@@ -159,7 +171,9 @@ input[type=submit]{
 
 #hebergement article{
     width: 60%;
+    height: 50%;
     background-color: #F2F2F2;
+    border-radius: 20px;
 }
 
 #hebergement aside{
@@ -167,5 +181,81 @@ input[type=submit]{
     align-items: center;
     justify-content: space-around;
     width: 30%;
+    height: 500%;
     background-color: #F2F2F2;
+    border-radius: 20px
+}
+
+.bloc_heber{
+    width: 90%;
+    min-height: 230px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloc_heber div{
+    width: 25%;
+    height: 180px;
+    margin: 15px;
+    background: white;
+    border-radius: 20px;
+}
+
+.bloc_heber img{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    border-radius: 20px;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+.bloc_heber a{
+    text-decoration: none;
+    color: black;
+}
+
+.bloc_heber h1{
+    font-size: 16px;
+    background: white;
+    position: relative;
+    top: 75px;
+}
+
+.bloc_heber p{
+    font-size: 14px;
+    background: white;
+    position: relative;
+    top: 65px;
+}
+.bloc_heber i{
+    position: relative;
+    top: 50px;
+    color: #0065FC;
+}
+
+.bloc{
+    border-radius: 20px;
+}
+
+.bloc_heber button{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    position: absolute;
+}
+
+#bloc_aside{
+    display: flex;
+    flex-direction: column;
+}
+
+#bloc_aside > i{
+    position: fixed;
+    top: 40%;
+    right: 90px;
+}
+
+.bloca a{
+    text-decoration: none;
+    color: black;
 }
