@@ -4,42 +4,34 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-/* Header ---------------------------------------------------------------------------------- */ 
-
-#tete{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2%;
-    width: 95%;
-    margin: auto;
+i{
+    color: #0065FC;
 }
+
+/* Header ---------------------------------------------------------------------------------- */ 
 
 header{
     display: flex;
+    padding-top: 2%;
+    width: 95%;
+    margin: auto;
     flex-direction: column;
 }
 
-#imglogo{
-    width: 15%;
+#image_logo{
+    width: 130px;
 }
 
-header h1{
-    font-size: 25px;
-    font-weight: bold;
-    margin-top: 5%;
-}
-
-header p{
-    font-size: 16px;
-    margin-top: -1%;
-    font-weight: 500;
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
     margin: 0;
-    padding: 0;
 }
 
 nav li{
@@ -62,27 +54,40 @@ nav a:hover{
     transition: all ease-in-out 300ms;
 }
 
-.bleu{
+.blue{
     color: #0065FC;
 }
 .inscription{
     font-weight: bold;
 }
 
+header h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header p{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: -0.5%;
+}
+
 /* Recherche ---------------------------------------------------------------------------------- */ 
 
-#recherche{
+#research{
     display: flex;
     width: 95%;
     margin: auto;
+    max-height: 55px;
+    align-items: center;
 }
 
-#recherche a i{
+#research a i{
     text-decoration: none;
 }
 
-#recherche form{
-    display: flex;
+#research form{
+    display: flex
 }
 
 #gps{
@@ -94,71 +99,61 @@ nav a:hover{
 }
 
 input[type=text]{
-    height: 92%;
+    height: 50px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 18px;
     border: 2px solid #F2F2F2;
     outline: none;
+    padding: auto;
 }
 
 input[type=submit]{
-    display: inline-block;
     color: white;
     background: #0065FC;
     padding: 0px 25px;
     border: none;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-left: -2%;
+    margin-left: 0%;
     font-family: 'Raleway', sans-serif;
-    font-weight: 550;
+    font-weight: 510;
     font-size: 18px;
 }
 
 /* Filtre ---------------------------------------------------------------------------------- */ 
 
-#filtres{
+#filters{
     display: flex;
     padding-top: 1%;
-    width: 95%;
-    margin: auto;
+    width: 50%;
+    margin-left: 3%;
+    justify-content: space-between;
 }
 
-#filtres > div{
+#filters > div{
     display: flex;
+    align-items: center;
 }
 
-#filtres h1{
+#filters h1{
     font-size: 17px;
 }
 
-#filtres i{
-    margin-left: 45px;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: #DEEBFF;
-    color:  #0065FC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin-right: -2.3%;
+#filters i{
+    background
+
 }
 
-#filtres button{
-    display: inline-block;
-    padding: 6px 20px 6px 45px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
+#filters button{
+    border: none;
     background: white;
-    border: 2px solid #F2F2F2;
-    border-radius: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 550;
+    font-size: 18px;
 }
 
-#filtres button:hover{
+#filters button:hover{
     color:#0065FC;
     padding-top: 2px;
 }
@@ -190,21 +185,21 @@ input[type=submit]{
 
 /* Bloc Hébergement ---------------------------------------------------------------------------------- */ 
 
-#hebergement{
+#accommodation{
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: auto;
 }
 
-#hebergement article{
+#accommodation article{
     width: 60%;
     height: 50%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
 
-#hebergement aside{
+#accommodation aside{
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -214,7 +209,7 @@ input[type=submit]{
     border-radius: 20px
 }
 
-.bloc_heber{
+.accommodation_block{
     width: 90%;
     height: 50%;
     display: flex;
@@ -222,12 +217,12 @@ input[type=submit]{
     margin: auto;
 }
 
-.bloc_heber > div {
+.accommodation_block > div{
     width: 100%;
     height: 50%;
     margin: 2%;
 }
-.bloc_heber img{
+.accommodation_block img{
     width: 80%;
     height: 120px;
     border-radius: 20px;
@@ -237,7 +232,7 @@ input[type=submit]{
     border-right: 6px solid white;
 }
 
-.bloc{
+.accommodation_block > div > div{
     display: block;
     background: white;
     width: 84%;
@@ -247,24 +242,24 @@ input[type=submit]{
     border-bottom-right-radius: 20px;
 }
 
-.bloc a{
+.accommodation_block > div > div > a{
     text-decoration: none;
     color: black;
 }
 
-.bloc h1{
+.accommodation_block > div > div > a > h1{
     font-size: 17px;
     padding-top: 3%;
     padding-left: 6%;
 }
 
-.bloc p{
+.accommodation_block > div > div > a > p{
     font-size: 14px;
     padding-left: 6%;
     margin-top: -4%;
 }
 
-.etoile{
+.stars{
     display: flex;
     align-items: baseline;
     padding-left: 6%;
@@ -272,15 +267,11 @@ input[type=submit]{
     padding-bottom: 3%;
 }
 
-i{
-    color: #0065FC;
-}
-
-.etoilevide{
+.emptystars{
     color: #D9D9D9;
 }   
 
-.bloc_heber button{
+.accommodation_block button{
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -289,23 +280,24 @@ i{
 
 /* Bloc aside ---------------------------------------------------------------------------------- */ 
 
-#hebergement aside{
+#accommodation aside{
     width: 35%;
 }
 
-#bloc_aside{
+#accommodation > aside > div{
     display: flex;
     flex-direction: column;
 
 }
 
-#bloc_aside > i{
+#accommodation aside > div > i{
     position: fixed;
     top: 40%;
     right: 90px;
+    color: black;
 }
 
-.bloca a{
+.aside_block a{
     text-decoration: none;
     color: black;
 }
@@ -316,7 +308,7 @@ footer{
     background: #F2F2F2;
 }
 
-#footer1{
+footer > div{
     display: flex;
     width: 90%;
     justify-content: space-between;
@@ -325,7 +317,7 @@ footer{
     padding-bottom: 2%;
 }
 
-#footer1 div{
+footer > div > div{
     width: 33%;
 }
 
