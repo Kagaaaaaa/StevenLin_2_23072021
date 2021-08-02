@@ -1,5 +1,5 @@
 body{
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;   
 }
 
 i{
@@ -162,7 +162,6 @@ input[type=submit]{
 
 #info{
     display: flex;
-    margin-top: 1%;
     margin-bottom: 1%;
     align-items: center;
 }
@@ -194,16 +193,6 @@ input[type=submit]{
     height: 50%;
     background-color: #F2F2F2;
     border-radius: 20px;
-}
-
-#accommodation aside{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 30%;
-    height: 500%;
-    background-color: #F2F2F2;
-    border-radius: 20px
 }
 
 .accommodation_block{
@@ -278,26 +267,72 @@ input[type=submit]{
 /* Bloc aside ---------------------------------------------------------------------------------- */ 
 
 #accommodation aside{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 35%;
+    background-color: #F2F2F2;
+    border-radius: 20px
 }
 
-#accommodation > aside > div{
+#accommodation > aside > div:first-child{
     display: flex;
-    flex-direction: column;
-
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
 }
 
 #accommodation aside > div > i{
-    position: fixed;
-    top: 40%;
-    right: 90px;
     color: black;
 }
 
-.aside_block a{
+#aside_container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.aside_block{
+    display: flex;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.aside_block img{
+    width: 140px;
+    height: 140px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-radius: 20px;
+}
+
+.aside_block > div > a{
     text-decoration: none;
     color: black;
 }
+
+.aside_block > div{
+    background: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    min-width: 50%;
+    margin-left: -2%;
+}
+
+.aside_block > div > a > h1{
+    font-size: 17px;
+}
+
+.aside_block > div > a > p{
+    font-size: 14px;
+}
+
+.stars_aside{
+    display: flex;
+}
+
 
 /* Footer ---------------------------------------------------------------------------------- */ 
 
@@ -327,11 +362,21 @@ footer p{
     font-weight: 500;
 }
 
-
 /* Mobile ---------------------------------------------------------------------------------- */ 
 
-@media (max-width: 480px){
+@media screen and (max-width: 480px){
     body{
         width: auto;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inscription{
+        position: absolute;
+        top: 1;
+        right: 1;
     }
 }
