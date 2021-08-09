@@ -409,23 +409,38 @@ footer p{
     }
 
     nav a:hover{
-        display: none;
+        border-top: none;
+        padding-top: 0;
+    }
+
+    nav li{
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    nav li:first-child{
+        border-bottom: 4px solid #F2F2F2;
+    }
+
+    nav li:nth-child(2){
+        border-bottom: 4px solid #F2F2F2;
     }
 
     .blue{
+        display: block;
         position: absolute;
         top: 4%;
-        right: 27%;
+        right: 19%;
         font-size: 14px;
     }
 
     #subtitles h1{
-        width: 70%;
-        font-size: 18px;
+        width: 80%;
+        font-size: 21px;
     }
     
     #subtitles p{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     #gps{
@@ -486,5 +501,9 @@ footer p{
 
     footer > div > div{
         width: 100%;
+    }
+
+    footer h1{
+       font-weight: bold; 
     }
 }
