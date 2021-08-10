@@ -150,8 +150,7 @@ input[type=submit]{
     background:#DEEBFF;
     padding: 12px 12px;
     border-radius: 50px;
-    margin-right: -35px;
-    position: relative;
+    position: absolute;
 }
 
 .bigger{
@@ -392,6 +391,7 @@ footer p{
     nav{
         display: flex;
         flex-wrap: wrap;
+        position: relative;
     }
 
     #image_logo{
@@ -416,22 +416,16 @@ footer p{
     nav li{
         width: 100%;
         padding-bottom: 15px;
-    }
-
-    nav li:first-child{
-        border-bottom: 4px solid #F2F2F2;
-    }
-
-    nav li:nth-child(2){
-        border-bottom: 4px solid #F2F2F2;
+        padding-left: 50px;
+        margin-left: 0;
+        text-decoration: underline;
     }
 
     .blue{
-        display: block;
+        font-size: 16px;
         position: absolute;
-        top: 4%;
-        right: 19%;
-        font-size: 14px;
+        top: 25px;
+        right: 1px;
     }
 
     #subtitles h1{
@@ -450,7 +444,7 @@ footer p{
 
     input[type=text]{
         height: 39px;
-        width: 70%;
+        width: 100%;
     }
 
     input[type=submit]{
@@ -481,15 +475,27 @@ footer p{
     }
 
     #filters > div{
-        margin-left: 0;
+        margin-left: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
 
     #filters button{
-        padding: 8px 15px 8px 30px;
+        padding: 12px 15px 12px 57px;
+        font-size: 17px;
     }
 
     #filters i{
-        font-size: 13px;
+        font-size: 15px;
+        padding: 16px 16px;
+    }
+
+    #info{
+        align-items: baseline;
+    }
+
+    #info p{
+        font-size: 15px;
     }
 
     footer > div{
