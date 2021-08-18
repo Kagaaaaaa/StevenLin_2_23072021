@@ -32,11 +32,9 @@ nav{
 nav ul{
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
 }
 
 nav li{
-    display: inline-block;
     margin-left: 55px;
     font-size: 15px;
 }
@@ -49,10 +47,11 @@ nav a{
 nav a:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 34px;
-    padding-left: 12px;
-    padding-right: 12px;
-    transition: all ease-in-out 300ms;
+    transition: ease-in-out 250ms;
+    top: 0;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 52px;
 }
 
 .blue{
@@ -139,12 +138,13 @@ input[type=submit]{
     display: flex;
     padding: 1.5% 0%;
     align-items: center;
+    width: 80%;
 }
 
 #filters > div{
     display: flex;
     align-items: center;
-    margin-left: 70px;
+    margin-left: 3%;
 }
 
 #filters h1{
@@ -224,21 +224,27 @@ input[type=submit]{
 }
 
 .accommodation_block > div{
-    width: 100%;
+    width: 33%;
     height: 50%;
     margin: 2%;
 }
+
+.image_wrapper{
+    max-width: 100%;
+    background:red;
+}
+
 .accommodation_block img{
-    width: 80%;
-    height: 120px;
+    max-width: 100%;
+    display: block;
     border-radius: 20px;
-    position: relative;
     border-left: 6px solid white;
     border-top: 6px solid white;
     border-right: 6px solid white;
+    object-fit: cover;
 }
 
-.accommodation_block > div > div{
+.text_wrapper{
     display: block;
     background: white;
     width: 84%;
