@@ -209,7 +209,7 @@ input[type=submit]{
 }
 
 #accommodation article{
-    width: 60%;
+    width: 63%;
     height: 50%;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -227,55 +227,53 @@ input[type=submit]{
     width: 33%;
     height: 50%;
     margin: 2%;
-}
-
-.image_wrapper{
-    max-width: 100%;
-    background:red;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px black;
+    background: white;
+    border: 5px solid white;
 }
 
 .accommodation_block img{
-    max-width: 100%;
-    display: block;
-    border-radius: 20px;
-    border-left: 6px solid white;
-    border-top: 6px solid white;
-    border-right: 6px solid white;
+    width: 100%;
+    height: 120px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     object-fit: cover;
 }
 
 .text_wrapper{
-    display: block;
-    background: white;
-    width: 84%;
-    margin-top: -13%;
+    width: 100%;
+    height: 80px;
+    margin-top: -10%;
     position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
 
-.accommodation_block > div > div > a{
+.accommodation_block a{
     text-decoration: none;
     color: black;
 }
 
-.accommodation_block > div > div > a > h1{
+.text_wrapper h1,.text_wrapper h2,.text_wrapper h3,.text_wrapper h4,.text_wrapper h5,.text_wrapper h6{
     font-size: 17px;
-    padding-top: 3%;
+    padding-top: 5%;
     padding-left: 6%;
+    margin-bottom: 2%;
+    margin-top: 8%;
 }
 
-.accommodation_block > div > div > a > p{
+.text_wrapper p{
     font-size: 14px;
     padding-left: 6%;
-    margin-top: -4%;
+    margin: 0;
+    margin-bottom: 2%;
 }
 
 .stars{
     display: flex;
     align-items: baseline;
     padding-left: 6%;
-    margin-top: -4%;
     padding-bottom: 3%;
 }
 
@@ -283,82 +281,153 @@ input[type=submit]{
     color: #D9D9D9;
 }   
 
-.accommodation_block button{
-    display: inline-block;
+#accommodation > article > h1{
+    margin-left: 6%;
+    font-size: 22px;
+    padding-top: 1%;
+    margin-bottom: 1%;
+}
+#accommodation button{
+    margin-left: 6%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border: none;
+    font-size: 19px;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-   
+    font-weight: 900;
 }
 
 /* Bloc aside ---------------------------------------------------------------------------------- */ 
 
-#accommodation aside{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 35%;
+aside{
+    width: 33%;
     background-color: #F2F2F2;
     border-radius: 20px
 }
 
-#accommodation > aside > div:first-child{
+#aside_header{
     display: flex;
-    justify-content: space-between;
-    width: 90%;
     align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
 }
 
-#accommodation aside > div > i{
+#aside_header h1{
+    font-size: 22px;
+}
+
+#aside_header i{
     color: black;
 }
 
 #aside_container{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
+
 .aside_block{
-    display: flex;
-    margin-top: 1.5%;
-    margin-bottom: 1.5%;
-}
-
-.aside_block img{
-    width: 140px;
-    height: 140px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    border-left: 3px solid white;
+    background: white;
+    border: 5px solid white;
     border-radius: 20px;
+    box-shadow: 0px 0px 4px black;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 7%;
 }
 
-.aside_block > div > a{
+.aside_block a{
+    display: flex;
     text-decoration: none;
     color: black;
 }
 
-.aside_block > div{
-    background: white;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    position: relative;
-    min-width: 50%;
-    margin-left: -2%;
+.aside_block > a > img{
+    width: 35%;
+    height: 140px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
-.aside_block > div > a > h1{
-    font-size: 17px;
+.text_aside_wrapper{
+    margin-left: 5%;
 }
 
-.aside_block > div > a > p{
-    font-size: 14px;
+.text_aside_wrapper h1,.text_aside_wrapper h2,.text_aside_wrapper h3{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.text_aside_wrapper p{
+    margin-top: 3%;
 }
 
 .stars_aside{
     display: flex;
+    margin-top: 10%
 }
 
+/* Activites ---------------------------------------------------------------------------------- */
+
+#activities{
+    width: 92%;
+    margin: auto;
+}
+
+#activities h1{
+    font-size: 22px;
+    margin-top: 5%;
+}
+
+#activities article{
+    display: flex;
+    width: 100%;
+}
+
+#activities div{
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px black;
+    width: 25%;
+    height: 600px;
+    margin-right: 1%;
+}
+
+#activities a{
+    text-decoration: none;
+    color: black;
+}
+
+#activities img{
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#activities p{
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+#two_row{
+    background: none;
+    border: none;
+    box-shadow: 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#two_row > div:first-child{
+    background: white;
+    width: 100%;
+    height: 50%;
+}
 
 /* Footer ---------------------------------------------------------------------------------- */ 
 
@@ -384,9 +453,9 @@ footer a{
     text-decoration: none;
     color: black;
 }
-footer h1{
+footer h1,footer h2,footer h3{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 footer p{
@@ -540,9 +609,5 @@ footer p{
     footer > div > div{
         width: 100%;
         margin-top: 5%;
-    }
-
-    footer h1{
-       font-weight: bold; 
     }
 }
