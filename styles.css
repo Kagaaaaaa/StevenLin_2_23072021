@@ -225,10 +225,9 @@ input[type=submit]{
 
 .accommodation_block > div{
     width: 33%;
-    height: 50%;
     margin: 2%;
     border-radius: 20px;
-    box-shadow: 0px 0px 4px black;
+    box-shadow: 0px 12px 20px #e6dede;
     background: white;
     border: 5px solid white;
 }
@@ -310,6 +309,7 @@ aside{
     align-items: center;
     justify-content: space-between;
     width: 85%;
+    height: 10%;
     margin: auto;
     padding: 10px;
 }
@@ -326,28 +326,31 @@ aside{
     display: flex;
     flex-direction: column;
     width: 85%;
+    height: 90%;
     margin: auto;
 }
 
 .aside_block{
-    background: white;
-    border: 5px solid white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 4px black;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 7%;
+    width: 100%;
+    height: 32%;
 }
 
 .aside_block a{
     display: flex;
     text-decoration: none;
     color: black;
+    background: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 12px 20px #e6dede;
+    width: 85%;
+    height: 80%;
+    margin: auto;
 }
 
 .aside_block > a > img{
     width: 35%;
-    height: 140px;
+    height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
@@ -355,6 +358,9 @@ aside{
 
 .text_aside_wrapper{
     margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text_aside_wrapper h1,.text_aside_wrapper h2,.text_aside_wrapper h3{
@@ -363,24 +369,23 @@ aside{
 }
 
 .text_aside_wrapper p{
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .stars_aside{
     display: flex;
-    margin-top: 10%
+    margin-bottom: 2%;
 }
 
 /* Activites ---------------------------------------------------------------------------------- */
 
 #activities{
     width: 92%;
-    margin: auto;
+    margin: 5% auto;
 }
 
 #activities h1{
     font-size: 22px;
-    margin-top: 5%;
 }
 
 #activities article{
@@ -388,21 +393,16 @@ aside{
     width: 100%;
 }
 
-#activities div{
+.single_row{
     background: white;
     border-radius: 20px;
-    box-shadow: 0px 0px 4px black;
-    width: 25%;
+    box-shadow: 0px 12px 20px #e6dede;
+    width: 24%;
     height: 600px;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
-#activities a{
-    text-decoration: none;
-    color: black;
-}
-
-#activities img{
+.single_row img{
     object-fit: cover;
     width: 100%;
     height: 90%;
@@ -410,25 +410,88 @@ aside{
     border-top-right-radius: 20px;
 }
 
+#activities a{
+    text-decoration: none;
+    color: black;
+}
+
 #activities p{
     font-weight: bold;
     margin-left: 5%;
 }
 
-#two_row{
-    background: none;
-    border: none;
-    box-shadow: 0px 0px 0px;
+.double_row{
+    width: 24%;
+    height: 600px;
+    margin-right: 2%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-#two_row > div:first-child{
-    background: white;
+.card_fort_de_pomegues{
     width: 100%;
-    height: 50%;
+    height: 53%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 12px 20px #e6dede;
 }
 
+.card_fort_de_pomegues img{
+    object-fit: cover;
+    width: 100%;
+    height: 81%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card_iles_de_frioul{
+    width: 100%;
+    height: 40%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 12px 20px #e6dede;
+}
+
+.card_iles_de_frioul img{
+    object-fit: cover;
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card_notre_dame_de_la_garde{
+    width: 100%;
+    height: 43%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 12px 20px #e6dede;
+}
+
+.card_notre_dame_de_la_garde img{
+    object-fit: cover;
+    width: 100%;
+    height: 77%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card_parc_longchamp{
+    width: 100%;
+    height: 49%;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0px 12px 20px #e6dede;
+}
+
+.card_parc_longchamp img{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+}
 /* Footer ---------------------------------------------------------------------------------- */ 
 
 footer{
