@@ -18,6 +18,7 @@ header{
 
 #image_logo{
     width: 120px;
+    padding-top: 30px;
 }
 
 nav{
@@ -26,32 +27,31 @@ nav{
     justify-content: space-between;
     width: 92%;
     margin: auto;
-    padding-top: 2%;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
+    margin-top: 0;
 }
 
 nav li{
     margin-left: 55px;
     font-size: 15px;
+    padding-top: 30px;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+nav li:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    transition: ease-in-out 250ms;
 }
 
 nav a{
     text-decoration: none;
     color: black;
-}
-
-nav a:hover{
-    color: #0065FC;
-    border-top: 2px solid #0065FC;
-    transition: ease-in-out 250ms;
-    top: 0;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 52px;
 }
 
 .blue{
@@ -633,11 +633,6 @@ footer p{
         border-bottom: 2px solid #0065FC;
     }
 
-    nav a:hover{
-        border-top: none;
-        padding-top: 0;
-    }
-
     nav li{
         width: 100%;
         margin-top: 15px;
@@ -651,6 +646,7 @@ footer p{
     nav li:hover{
         padding-bottom: 15px;
         border-bottom: 4px solid #0065FC;
+        border-top: none;
     }
 
     nav li:last-child{
