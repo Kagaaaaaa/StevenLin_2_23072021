@@ -18,12 +18,11 @@ header{
 
 #image_logo{
     width: 120px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 nav{
     display: flex;
-    align-items:flex-start;
     justify-content: space-between;
     width: 92%;
     margin: auto;
@@ -210,7 +209,6 @@ input[type=submit]{
 
 #accommodation article{
     width: 63%;
-    height: 50%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -242,8 +240,7 @@ input[type=submit]{
 
 .text_wrapper{
     width: 100%;
-    height: 90px;
-    margin-top: -8%;
+    height: 40%;
     position: relative;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -261,7 +258,7 @@ input[type=submit]{
     font-size: 17px;
     padding-left: 6%;
     margin-bottom: 2%;
-    margin-top: 10%;
+    margin-top: 2%;
 }
 
 .text_wrapper p{
@@ -283,10 +280,11 @@ input[type=submit]{
 }   
 
 #accommodation > article > h1{
-    margin-left: 6%;
+    width: 85%;
+    margin: auto;
     font-size: 22px;
-    padding-top: 1%;
-    margin-bottom: 1%;
+    padding: 10px;
+    margin-top: 16px;
 }
 #accommodation button{
     margin-left: 6%;
@@ -358,6 +356,7 @@ aside{
 }
 
 .text_aside_wrapper{
+    width: 70%;
     margin-left: 5%;
     display: flex;
     flex-direction: column;
@@ -528,7 +527,7 @@ footer p{
     font-weight: 500;
 }
 
-
+/* Laptop ---------------------------------------------------------------------------------- */
 @media screen and (max-width: 1024px){
 
     #filters{
@@ -567,6 +566,11 @@ footer p{
         height: 140px;
     }
 
+    .aside_block a{
+        width: 90%;
+        height: 90%;
+    }
+
     .text_aside_wrapper h1, .text_aside_wrapper h2, .text_aside_wrapper h3{
         font-size: 15px;
     }
@@ -603,6 +607,133 @@ footer p{
         height: 75%;
     }
 }
+
+/* Tablet ---------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px){
+
+    #aside_container{
+        flex-direction: column;
+    }
+
+    aside{
+        border-radius: 0px;
+    }
+
+    .aside_block{
+        width: 100%;
+        margin-top: 40px;
+        height: 260px;
+    }
+
+    .aside_block > a{
+        width: 100%;
+    }
+
+    .text_aside_wrapper h1, .text_aside_wrapper h2, .text_aside_wrapper h3{
+        font-size: 25px;
+    }
+
+    .text_aside_wrapper p{
+        font-size: 20px;
+    }
+    
+    #accommodation{
+        width: 100%;
+    }
+
+    #accommodation article{
+        background: white;
+    }
+
+    .accommodation_block{
+        flex-direction: column;
+    }
+
+    #main_wrapper button{
+        background: white;
+        font-size: 25px;
+        margin-top: 2%;
+    }
+
+    .accommodation_block > div{
+        width: 100%;
+        margin: 2% 0;
+        height: 260px;
+    }
+
+    .accommodation_block img{
+        height: 170px;
+    }
+
+    .text_wrapper h1,.text_wrapper h2,.text_wrapper h3,.text_wrapper h4,.text_wrapper h5,.text_wrapper h6{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    #activities{
+        width: 100%;
+    }
+
+    #activities h1{
+        width: 85%;
+        margin: auto;
+        padding: 10px;
+        margin-top: 16px;
+    }
+
+    #activities article{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        max-height: none;
+    }
+
+    #activities article p{
+        font-size: 17px;
+    }
+
+    #activities article > div{
+        margin: 2% 0;
+    }
+    #activities article > div > div{
+        margin: 2% 0;
+    }
+
+    .single_row{
+        width: 100%;
+        height: 260px;
+    }
+
+    .single_row img{
+        height: 78%;
+    }
+
+    .double_row{
+        width: 100%;
+    }
+
+    .double_row img{
+        height: 78%
+    }
+
+    .card_fort_de_pomegues{
+        height: 260px;
+    }
+
+    .card_iles_de_frioul{
+        height: 260px;
+    }
+
+    .card_notre_dame_de_la_garde{
+        height: 260px;
+    }
+
+    .card_parc_longchamp{
+        height: 260px;
+    }
+}
+
 /* Mobile ---------------------------------------------------------------------------------- */ 
 
 @media screen and (max-width: 425px){    
