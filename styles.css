@@ -42,6 +42,10 @@ nav li{
     padding-right: 13px;
 }
 
+nav a:hover{
+    color: blue;
+}
+
 nav li:hover{
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -612,6 +616,66 @@ footer p{
 
 @media screen and (max-width: 768px){
 
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        width: 100%;
+    }
+
+    #image_logo{
+        width: 100px;
+        margin-top: 4%;
+        margin-left: 6%;
+    }
+
+    nav ul{
+        padding: 0px;
+        width: 100%;
+    }
+    nav a:active{
+        color: #0065FC;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    nav li{
+        width: 100%;
+        margin-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 0;
+        text-align: center;
+        border-bottom: 4px solid #F2F2F2;
+        font-weight: 500;
+    }
+
+    nav li:hover{
+        padding-bottom: 15px;
+        border-bottom: 4px solid #0065FC;
+        border-top: none;
+    }
+
+    nav li:last-child{
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        margin-top: 0px;
+        width: 30%;
+        border-bottom: none;
+    }
+
+    .blue{
+        font-size: 16px;
+    }
+
+    form{
+        flex-grow: 1;
+    }
+
+    input[type=text]{
+        height: 50px;
+        width: 100%;
+    }
+
     #aside_container{
         flex-direction: column;
     }
@@ -663,11 +727,16 @@ footer p{
     }
 
     .accommodation_block img{
-        height: 170px;
+        height: 165px;
     }
 
     .text_wrapper h1,.text_wrapper h2,.text_wrapper h3,.text_wrapper h4,.text_wrapper h5,.text_wrapper h6{
         font-size: 20px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .text_wrapper p{
         margin-bottom: 5px;
     }
 
@@ -739,14 +808,7 @@ footer p{
 @media screen and (max-width: 425px){    
 
     header{
-        width: 87%;
-    }
-
-    nav{
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        width: 100%;
+        width: 90%;
     }
 
     #image_logo{
@@ -755,37 +817,12 @@ footer p{
         margin-left: 6%;
     }
 
-    nav ul{
-        padding: 0px;
-        width: 100%;
-    }
-    nav a:active{
-        color: #0065FC;
-        border-bottom: 2px solid #0065FC;
-    }
-
-    nav li{
-        width: 100%;
-        margin-top: 15px;
-        padding-bottom: 15px;
-        margin-left: 0;
-        text-align: center;
-        border-bottom: 4px solid #F2F2F2;
-        font-weight: 500;
-    }
-
-    nav li:hover{
-        padding-bottom: 15px;
-        border-bottom: 4px solid #0065FC;
-        border-top: none;
-    }
-
     nav li:last-child{
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        margin-top: 0px;
-        width: 30%;
+        top: 23px;
+        right: 0px;
+    }
+
+    nav li:last-child:hover{
         border-bottom: none;
     }
 
@@ -807,13 +844,8 @@ footer p{
         border: 15px solid  #F2F2F2;
     }
 
-    form{
-        flex-grow: 1;
-    }
-    
     input[type=text]{
         height: 39px;
-        width: 100%;
     }
 
     input[type=submit]{
@@ -857,10 +889,90 @@ footer p{
 
     #info{
         align-items: baseline;
+        margin-bottom: 20px;
     }
 
     #info p{
         font-size: 15px;
+    }
+
+    #aside_header{
+        width: 90%;
+    }
+
+    .aside_block{
+        height: 160px;
+        margin-top: 5px;
+    }
+
+    .text_aside_wrapper{
+        width: 50%;
+    }
+
+    .text_aside_wrapper h1, .text_aside_wrapper h2, .text_aside_wrapper h3{
+        font-size: 18px;
+    }
+
+    .text_aside_wrapper p{
+        font-size: 14px;
+    }
+
+    .accommodation_block > div{
+        height: 190px;
+    }
+
+    .accommodation_block img{
+        height: 120px;
+    }
+    .text_wrapper h1,.text_wrapper h2,.text_wrapper h3,.text_wrapper h4,.text_wrapper h5,.text_wrapper h6{
+        font-size: 18px;
+    }
+
+    #main_wrapper button{
+        background: white;
+        font-size:  19px;
+        margin-top: 30px;
+    }
+
+    #activities{
+        margin: 8% auto;
+    }
+    
+    #activities h1{
+        width: 90%;
+    }
+
+    #activities article p{
+        font-size: 18px;
+        margin: 10px 20px;
+    }
+
+    .single_row{
+        height: 190px;
+    }
+
+    .single_row img{
+        height: 73%;
+    }
+
+    .card_fort_de_pomegues{
+        height: 190px;
+    }
+
+    .card_iles_de_frioul{
+        height: 190px;
+    }
+
+    .card_notre_dame_de_la_garde{
+        height: 190px;
+    }
+
+    .card_parc_longchamp{
+        height: 190px;
+    }
+
+    .double_row img{
+        height: 73%
     }
 
     footer > div{
