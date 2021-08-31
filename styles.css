@@ -398,7 +398,7 @@ aside{
     font-size: 22px;
 }
 
-#activities article{
+#activities div{
     display: flex;
     width: 100%;
 }
@@ -589,11 +589,11 @@ footer p{
         font-size: 14px;
     }
 
-    #activities article{
+    #activities div{
         max-height: 400px;
     }
 
-    #activities article p{
+    #activities div p{
         font-size: 14px;
     }
 
@@ -760,21 +760,21 @@ footer p{
         margin-top: 16px;
     }
 
-    #activities article{
+    #activities div{
         flex-direction: column;
         width: 90%;
         margin: auto;
         max-height: none;
     }
 
-    #activities article p{
+    #activities div p{
         font-size: 17px;
     }
 
-    #activities article > div{
+    #activities div > div{
         margin: 2% 0;
     }
-    #activities article > div > div{
+    #activities div > div > div{
         margin: 2% 0;
     }
 
@@ -926,7 +926,7 @@ footer p{
         font-size: 14px;
     }
 
-    #accommodation > article > h2{
+    #accommodation > div > h2{
         margin-top: 0;
         padding-top: 0;
     }
@@ -956,7 +956,7 @@ footer p{
         width: 90%;
     }
 
-    #activities article p{
+    #activities div p{
         font-size: 18px;
         margin: 10px 20px;
     }
