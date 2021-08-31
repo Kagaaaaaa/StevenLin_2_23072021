@@ -36,14 +36,14 @@ nav ul{
 
 nav li{
     margin-left: 55px;
-    font-size: 15px;
+    font-size: 17px;
     padding-top: 30px;
     padding-left: 13px;
     padding-right: 13px;
 }
 
 nav a:hover{
-    color: blue;
+    color: #0065FC;
 }
 
 nav li:hover{
@@ -150,8 +150,9 @@ input[type=submit]{
     margin-left: 3%;
 }
 
-#filters h1{
+#filters p{
     font-size: 17px;
+    font-weight: bold;
 }
 
 #filters i{
@@ -258,32 +259,33 @@ input[type=submit]{
     color: black;
 }
 
-.text_wrapper h1,.text_wrapper h2,.text_wrapper h3,.text_wrapper h4,.text_wrapper h5,.text_wrapper h6{
+.text_wrapper span{
+    display: block;
     font-size: 17px;
     padding-left: 6%;
     margin-bottom: 2%;
     margin-top: 2%;
+    font-weight: bold;
 }
 
 .text_wrapper p{
     font-size: 14px;
     padding-left: 6%;
     margin: 0;
-    margin-bottom: 2%;
 }
 
 .stars{
     display: flex;
     align-items: baseline;
     padding-left: 6%;
-    padding-bottom: 3%;
+    padding-bottom: 6%;
 }
 
 .emptystars{
     color: #D9D9D9;
 }   
 
-#accommodation > article > h1{
+#accommodation > article > h2{
     width: 85%;
     margin: auto;
     font-size: 22px;
@@ -318,7 +320,7 @@ aside{
     padding: 10px;
 }
 
-#aside_header h1{
+#aside_header h2{
     font-size: 22px;
 }
 
@@ -367,9 +369,12 @@ aside{
     justify-content: space-between;
 }
 
-.text_aside_wrapper h1,.text_aside_wrapper h2,.text_aside_wrapper h3{
+.text_aside_wrapper span{
+    display: block;
+    margin-top: 5%;
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .text_aside_wrapper p{
@@ -389,7 +394,7 @@ aside{
     margin: 5% auto;
 }
 
-#activities h1{
+#activities h2{
     font-size: 22px;
 }
 
@@ -521,7 +526,8 @@ footer a{
     text-decoration: none;
     color: black;
 }
-footer h1,footer h2,footer h3{
+footer span{
+    display: block;
     font-size: 18px;
     font-weight: bold;
 }
@@ -575,7 +581,7 @@ footer p{
         height: 90%;
     }
 
-    .text_aside_wrapper h1, .text_aside_wrapper h2, .text_aside_wrapper h3{
+    .text_aside_wrapper span{
         font-size: 15px;
     }
 
@@ -635,7 +641,6 @@ footer p{
     }
     nav a:active{
         color: #0065FC;
-        border-bottom: 2px solid #0065FC;
     }
 
     nav li{
@@ -687,14 +692,14 @@ footer p{
     .aside_block{
         width: 100%;
         margin-top: 40px;
-        height: 260px;
+        height: 210px;
     }
 
     .aside_block > a{
         width: 100%;
     }
 
-    .text_aside_wrapper h1, .text_aside_wrapper h2, .text_aside_wrapper h3{
+    .text_aside_wrapper span{
         font-size: 25px;
     }
 
@@ -730,7 +735,7 @@ footer p{
         height: 165px;
     }
 
-    .text_wrapper h1,.text_wrapper h2,.text_wrapper h3,.text_wrapper h4,.text_wrapper h5,.text_wrapper h6{
+    .text_wrapper span{
         font-size: 20px;
         margin-bottom: 5px;
         margin-top: 5px;
@@ -740,11 +745,15 @@ footer p{
         margin-bottom: 5px;
     }
 
+    .stars{
+        padding-bottom: 2.5%;
+    }
+
     #activities{
         width: 100%;
     }
 
-    #activities h1{
+    #activities h2{
         width: 85%;
         margin: auto;
         padding: 10px;
@@ -866,7 +875,7 @@ footer p{
         font-size: 15px;
     }
 
-    #filters h1{
+    #filters p{
         width: 100%;
         font-size: 17px;
     }
@@ -909,12 +918,17 @@ footer p{
         width: 50%;
     }
 
-    .text_aside_wrapper h1, .text_aside_wrapper h2, .text_aside_wrapper h3{
+    .text_aside_wrapper span{
         font-size: 18px;
     }
 
     .text_aside_wrapper p{
         font-size: 14px;
+    }
+
+    #accommodation > article > h2{
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .accommodation_block > div{
@@ -924,7 +938,7 @@ footer p{
     .accommodation_block img{
         height: 120px;
     }
-    .text_wrapper h1,.text_wrapper h2,.text_wrapper h3,.text_wrapper h4,.text_wrapper h5,.text_wrapper h6{
+    .text_wrapper span{
         font-size: 18px;
     }
 
@@ -938,7 +952,7 @@ footer p{
         margin: 8% auto;
     }
     
-    #activities h1{
+    #activities h2{
         width: 90%;
     }
 
